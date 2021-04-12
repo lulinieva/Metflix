@@ -8,8 +8,12 @@ public class Temporada {
 
     public Episodio buscarEpisodio(int numeroEpisodio){
         for (Episodio episodio : this.episodios){
-            if (episodio.numero == numeroEpisodio)
-            return episodio;
+
+            if (episodio.numero == numeroEpisodio){
+                System.out.println("imprimir link de websodio "+ episodio);
+                return episodio;
+            }
+            
         }
         return null;
 
